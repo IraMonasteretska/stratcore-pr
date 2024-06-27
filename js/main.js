@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     // testimonials
     var swiper = new Swiper(".testimonialslider", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 20,
         speed: 1000,
         loop: true,
@@ -43,21 +43,43 @@ $(document).ready(function () {
             prevEl: ".swiper-button-prev",
         },
 
-        // breakpoints: {
-        //     640: {
-        //         slidesPerView: 2,
-        //         spaceBetween: 20,
-        //     },
-        //     768: {
-        //         slidesPerView: 2,
-        //         spaceBetween: 20,
-        //     },
-        //     992: {
-        //         slidesPerView: 3,
-        //         spaceBetween: 27,
-        //     },
-        // },
+        breakpoints: {
+            
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        },
     });
+
+    // styled selects
+    if ($('select').length) {
+        $('.styledselect').select2({
+            placeholder: "Select a state",
+            minimumResultsForSearch: Infinity,
+        });
+    }
+
+    // faq
+    $('.faq__header').click(function(){
+        $(this).toggleClass('active');
+        $('.faq__body').not($(this).next('.faq__body')).slideUp();
+        $(this).next('.faq__body').slideToggle();
+    });
+
+
+
+
+
+
+
+
+
+
 
 
 

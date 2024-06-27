@@ -205,7 +205,7 @@
 
 }
 
-.testimonialslider  {
+.testimonialslider {
     margin-top: 75px;
     padding-bottom: 79px;
 
@@ -218,7 +218,7 @@
         opacity: 0.4 !important;
         margin: 0 8px !important;
     }
-   
+
 
 }
 
@@ -285,5 +285,443 @@
                 font-size: 14px;
             }
         }
+    }
+}
+
+.contactsection {
+    padding: 100px 0 170px;
+
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+
+        .col-12,
+        .col-lg-6 {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+    .section_title {
+        text-align: center;
+    }
+
+    .subtitle {
+        max-width: 480px;
+        text-align: center;
+        font-weight: 500;
+        color: #7A7A7A;
+        margin: 0 auto 90px;
+    }
+
+    form {
+        .greenbrn {
+            max-width: 100%;
+            font-size: 18px;
+            height: 62px;
+        }
+    }
+}
+
+.faq {
+    background: #DCF4FE;
+    padding: 100px 0;
+
+    .section_title {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+
+.faq__row {
+    border-top: 1px solid #BEBEBE;
+
+    &:last-child {
+        border-bottom: 1px solid #BEBEBE;
+    }
+}
+
+.faq__header {
+
+    padding: 30px 50px 30px 0;
+    position: relative;
+    cursor: pointer;
+
+    p {
+        margin: 0;
+        color: #282828;
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    .openfaqic {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background: #94B945;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            display: inline-block;
+            width: 15px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            transition: 0.3s;
+
+            &:nth-child(2) {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    &.active {
+        .openfaqic {
+            span {
+                &:nth-child(2) {
+                    transform: rotate(0);
+                }
+            }
+        }
+    }
+}
+
+.faq__body {
+    display: none;
+    padding-bottom: 30px;
+
+    .faqbodywrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .faqimg {
+        width: 100%;
+        max-width: 28%;
+        flex: 0 0 28%;
+
+        img {
+            width: 100%;
+            border-radius: 30px;
+        }
+    }
+
+    .faqinfo {
+        width: 100%;
+        max-width: 72%;
+        flex: 0 0 72%;
+        padding: 0 54px 0 85px;
+
+        p {
+            color: #7A7A7A;
+            font-weight: 500;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            padding-left: 15px;
+            list-style: disc;
+            margin: 10px 0 25px;
+
+            li {
+                color: #7A7A7A;
+                font-weight: 500;
+                font-size: 17px;
+                margin-bottom: 5px;
+            }
+        }
+
+        a {
+            color: #94B945;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 150%;
+            position: relative;
+            display: inline-block;
+            padding-right: 30px;
+
+            img {
+                position: absolute;
+                right: 0;
+                top: 2px;
+            }
+        }
+    }
+}
+
+
+@media(max-width:1599.8px) {
+    .mainhero p {
+        margin-bottom: 40px;
+    }
+
+    .whatweoffer .subtitle {
+        margin-bottom: 50px;
+    }
+
+    .offerbox__top img {
+        width: 150px;
+    }
+
+    .offerbox .offerbox__bottom {
+        padding-bottom: 35px;
+    }
+
+    .testimonialslider {
+        margin-top: 50px;
+    }
+
+    .testimonials .swiper-button-next {
+        right: -40px;
+    }
+
+    .testimonials .swiper-button-prev {
+        left: -40px;
+    }
+
+    .contactsection .subtitle {
+        margin-bottom: 70px;
+    }
+
+
+
+
+
+    .faq__body .faqinfo p,
+    .faq__body .faqinfo ul li {
+        font-size: 16px;
+    }
+
+    .infosection,
+    .choosesect,
+    .testimonials,
+    .faq {
+        padding: 80px 0;
+    }
+
+    .whatweoffer,
+    .contactsection {
+        padding: 80px 0 100px;
+    }
+}
+
+@media(max-width:1499.8px) {
+
+    .mainhero {
+        min-height: 750px;
+    }
+
+    .offerswrapper {
+        padding: 0;
+    }
+
+    .offerbox .offerbox__top {
+        height: 200px;
+    }
+
+    .offerbox .offerbox__bottom {
+        padding: 0 20px 30px 20px;
+    }
+
+    .offerbox {
+        border-radius: 0 40px 40px 40px;
+    }
+
+    .offerbox .title {
+        font-size: 20px;
+    }
+
+    .choosesect .imgwrapper .leaf {
+        width: 120px;
+        left: -20px;
+        bottom: -20px;
+    }
+
+    .choosesect .greenbrn,
+    .infosection .greenbrn {
+        margin-top: 10px;
+    }
+
+    .testimonial .testimonial__bott .usericon {
+        max-width: 80px;
+        flex: 0 0 80px;
+    }
+
+    .testimonial .testimonial__bott .userinfo {
+        max-width: calc(100% - 80px);
+        flex: 0 0 calc(100% - 80px);
+    }
+
+    .testimonial .testimonial__bott {
+        align-items: flex-end;
+    }
+
+    .testimonial .testimonial__bott .userinfo .title {
+        font-size: 14px;
+    }
+
+    .testimonial .testimonial__bott .userinfo p {
+        line-height: 130%;
+    }
+
+    .testimonial {
+        border-radius: 40px 40px 40px 0;
+    }
+
+    .contactsection {
+        img {
+            padding-right: 40px;
+        }
+    }
+
+    .faq__header {
+        padding: 25px 50px 25px 0;
+
+        p {
+            font-size: 22px;
+        }
+    }
+
+
+
+}
+
+@media(max-width:1199.8px) {
+    .mainhero {
+        min-height: 650px;
+    }
+
+    .offerswrapper .row {
+        margin-left: -12px;
+        margin-right: -12px;
+
+        .col-xl-4 {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+
+    .testimonials .swiper-button-next {
+        right: -20px;
+    }
+
+    .testimonials .swiper-button-prev {
+        left: -20px;
+    }
+
+    .testimonial .testimonial__bott .userinfo .title {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+
+    .mainhero {
+        padding: 150px 0 70px;
+    }
+
+    .mainhero img {
+        display: block;
+        margin: 30px auto 0;
+    }
+
+    .offerbox .offerbox__top {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .offerbox {
+        margin-bottom: 30px;
+    }
+
+    .offerbox .title {
+        text-overflow: inherit;
+        overflow: visible;
+        white-space: inherit;
+        font-size: 22px;
+    }
+
+    .offerbox .description {
+        display: block;
+        -webkit-line-clamp: inherit;
+        -webkit-box-orient: inherit;
+        overflow: visible;
+        height: auto;
+    }
+
+    .infosection {
+
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+
+    .choosesect .choosesect__descr {
+        margin-bottom: 30px;
+    }
+
+    .testimonial {
+        height: 300px;
+    }
+
+    .testimonial .testimonial__top p {
+        -webkit-line-clamp: 6;
+    }
+
+    .contactsection img {
+        padding-right: 0;
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+    .contactsection {
+        .col-lg-6 {
+            // &:nth-child(1) {
+            //     order: 2;
+            // }
+
+            // &:nth-child(2) {
+            //     order: 1;
+            // }
+        }
+    }
+
+    .contactsection .subtitle {
+        margin-bottom: 50px;
+    }
+
+    .faq__body .faqinfo {
+        padding: 0 0px 0 30px;
+    }
+
+
+
+
+
+    .choosesect,
+    .faq,
+    .infosection,
+    .testimonials {
+        padding: 70px 0;
+    }
+
+    .contactsection,
+    .whatweoffer {
+        padding: 70px 0 70px;
     }
 }

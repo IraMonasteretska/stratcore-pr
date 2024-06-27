@@ -8,8 +8,9 @@
 
     <meta name="robots" content="noindex">
 
-    <link rel="stylesheet" href="css/lib/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/lib/select2.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,9 +28,81 @@
                         <nav>
                             <ul>
                                 <li><a href="#" hreflang="en">About us </a></li>
-                                <li><a href="#" hreflang="en">What we offer</a></li>
+                                <li>
+                                    <a href="#" hreflang="en">What we offer</a>
+                                    <div class="menudd">
+                                        <div class="menudd__wrapper">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" hreflang="en">
+                                                        <div class="icon">
+                                                            <img src="img/main/menucheck.svg" alt="icon">
+                                                        </div>
+                                                        <span>Translations</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" hreflang="en">
+                                                        <div class="icon">
+                                                            <img src="img/main/menucheck.svg" alt="icon">
+                                                        </div>
+                                                        <span>Content Writing & Seo</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" hreflang="en">
+                                                        <div class="icon">
+                                                            <img src="img/main/menucheck.svg" alt="icon">
+                                                        </div>
+                                                        <span>Technical Solutions</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" hreflang="en">
+                                                        <div class="icon">
+                                                            <img src="img/main/menucheck.svg" alt="icon">
+                                                        </div>
+                                                        <span>Transcreation</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" hreflang="en">
+                                                        <div class="icon">
+                                                            <img src="img/main/menucheck.svg" alt="icon">
+                                                        </div>
+                                                        <span>Audio Transcriptions & Voiceovers</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" hreflang="en">
+                                                        <div class="icon">
+                                                            <img src="img/main/menucheck.svg" alt="icon">
+                                                        </div>
+                                                        <span>Guide for ordering language-services</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" hreflang="en">
+                                                        <div class="icon">
+                                                            <img src="img/main/menucheck.svg" alt="icon">
+                                                        </div>
+                                                        <span>Copyediting & Proofreading</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" hreflang="en">
+                                                        <div class="icon">
+                                                            <img src="img/main/menucheck.svg" alt="icon">
+                                                        </div>
+                                                        <span>Copywriting &<br> Journalistic Articles</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
                                 <li><a href="#" hreflang="en">Sectors</a></li>
-                                <li><a href="#" hreflang="en">Client Advantages</a></li>
+                                <li><a href="#" hreflang="en">Our Clients</a></li>
                                 <li><a href="#" hreflang="en">Blog</a></li>
                                 <li><a href="#" hreflang="en">Cases</a></li>
                             </ul>
@@ -49,6 +122,9 @@
                         <a href="#" class="header__contact" hreflang="en">Contact us</a>
                     </div>
                 </div>
+                <button class="headermenu">
+                    <img src="img/main/menu.png" alt="menu">
+                </button>
             </div>
         </header>
 
@@ -89,7 +165,7 @@
                     </p>
                     <div class="offerswrapper">
                         <div class="row">
-                            <div class="col-xl-4">
+                            <div class="col-xl-4 col-lg-4">
                                 <a href="#" class="offerbox yellowbox" hreflang="en">
                                     <div class="offerbox__top">
                                         <img src="img/main/offerimg1.png" alt="img">
@@ -109,7 +185,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-xl-4">
+                            <div class="col-xl-4 col-lg-4">
                                 <a href="#" class="offerbox bluebox" hreflang="en">
                                     <div class="offerbox__top">
                                         <img src="img/main/offerimg2.png" alt="img">
@@ -129,7 +205,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-xl-4">
+                            <div class="col-xl-4 col-lg-4">
                                 <a href="#" class="offerbox greenbox" hreflang="en">
                                     <div class="offerbox__top">
                                         <img src="img/main/offerimg3.png" alt="img">
@@ -157,10 +233,10 @@
             <div class="infosection infosection_green">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-xl-7">
+                        <div class="col-xl-7 col-lg-6">
                             <img src="img/main/illustration2.svg" alt="img">
                         </div>
-                        <div class="col-xl-5">
+                        <div class="col-xl-5 col-lg-6">
                             <div class="infosection__descr">
                                 <span class="section_title">
                                     A great one translates meaning.
@@ -343,24 +419,373 @@
                 </div>
             </div>
 
+            <div class="contactsection">
+                <div class="container">
+                    <span class="section_title">
+                        Get in touch with us today
+                    </span>
+                    <p class="subtitle">
+                        To find out more how we can help you with all your language needs.
+                    </p>
+
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-lg-6">
+                            <img src="img/main/illustration3.svg" alt="img">
+                        </div>
+                        <div class="col-xl-5 col-lg-6">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="inputfield">
+                                            <select class="styledselect" data-placeholder="">
+                                                <!-- <option></option> -->
+                                                <option value="1">Translation</option>
+                                                <option value="2">Transcreation</option>
+                                                <option value="3">Copyediting & Proofreading</option>
+                                                <option value="4">Content Writing & Seo</option>
+                                                <option value="5">Audio Transcriptions & Voiceovers</option>
+                                                <option value="6">Copywriting & Journalistic Articles</option>
+                                                <option value="7">Technical Solutions</option>
+                                                <option value="8">Guide for ordering language-services</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputfield">
+                                            <input type="text" placeholder="Name*" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="inputfield">
+                                            <input type="number" placeholder="Telephone*" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="inputfield">
+                                            <input type="email" placeholder="Email*" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="inputfield">
+                                            <input type="text" placeholder="Company">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="inputfield">
+                                            <textarea placeholder="Describe what you need help with*"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="submit" value="Send Form" class="greenbrn">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="container">
+                    <span class="section_title">
+                        Frequently asked questions
+                    </span>
+                    <div class="faqwrapper">
+                        <div class="faq__row">
+                            <div class="faq__header">
+                                <p>
+                                    Why are translations needed?
+                                </p>
+                                <div class="openfaqic">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="faq__body">
+                                <div class="faqbodywrapper">
+                                    <div class="faqimg">
+                                        <img src="img/main/faqimg.png" alt="img">
+                                    </div>
+                                    <div class="faqinfo">
+                                        <p>
+                                            Is translation really necessary? This is a common question that people ask
+                                            themselves these days. After all, ‘everyone’ can, for example, exchange
+                                            ideas
+                                            and communicate using English. However, a lot of meaning and nuance and
+                                            precision can be lost when the native language isn’t used to full effect.
+                                        </p>
+                                        <p>
+                                            Visitors to websites are far more inclined to continue reading and stay if
+                                            they
+                                            are welcomed in their native language. And, of course, there are
+                                            circumstances
+                                            where there may be more at stake than losing customers if the person reading
+                                            the
+                                            text does not fully understand the information.
+                                        </p>
+                                        <ul>
+                                            <li>However</li>
+                                            <li>Native</li>
+                                            <li>Visitors</li>
+                                        </ul>
+                                        <a href="#" hreflang="en">
+                                            For more information, contact Melisa Erfen
+                                            <img src="img/main/offer-arr3.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__row">
+                            <div class="faq__header">
+                                <p>
+                                    Free online translation services – wouldn’t they work?
+                                </p>
+                                <div class="openfaqic">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="faq__body">
+                                <div class="faqbodywrapper">
+                                    <div class="faqimg">
+                                        <img src="img/main/faqimg.png" alt="img">
+                                    </div>
+                                    <div class="faqinfo">
+                                        <p>
+                                            Is translation really necessary? This is a common question that people ask
+                                            themselves these days. After all, ‘everyone’ can, for example, exchange
+                                            ideas
+                                            and communicate using English. However, a lot of meaning and nuance and
+                                            precision can be lost when the native language isn’t used to full effect.
+                                        </p>
+                                        <p>
+                                            Visitors to websites are far more inclined to continue reading and stay if
+                                            they
+                                            are welcomed in their native language. And, of course, there are
+                                            circumstances
+                                            where there may be more at stake than losing customers if the person reading
+                                            the
+                                            text does not fully understand the information.
+                                        </p>
+                                        <ul>
+                                            <li>However</li>
+                                            <li>Native</li>
+                                            <li>Visitors</li>
+                                        </ul>
+                                        <a href="#" hreflang="en">
+                                            For more information, contact Melisa Erfen
+                                            <img src="img/main/offer-arr3.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__row">
+                            <div class="faq__header">
+                                <p>
+                                    Why choose Stratcore as your translation agency?
+                                </p>
+                                <div class="openfaqic">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="faq__body">
+                                <div class="faqbodywrapper">
+                                    <div class="faqimg">
+                                        <img src="img/main/faqimg.png" alt="img">
+                                    </div>
+                                    <div class="faqinfo">
+                                        <p>
+                                            Is translation really necessary? This is a common question that people ask
+                                            themselves these days. After all, ‘everyone’ can, for example, exchange
+                                            ideas
+                                            and communicate using English. However, a lot of meaning and nuance and
+                                            precision can be lost when the native language isn’t used to full effect.
+                                        </p>
+                                        <p>
+                                            Visitors to websites are far more inclined to continue reading and stay if
+                                            they
+                                            are welcomed in their native language. And, of course, there are
+                                            circumstances
+                                            where there may be more at stake than losing customers if the person reading
+                                            the
+                                            text does not fully understand the information.
+                                        </p>
+                                        <ul>
+                                            <li>However</li>
+                                            <li>Native</li>
+                                            <li>Visitors</li>
+                                        </ul>
+                                        <a href="#" hreflang="en">
+                                            For more information, contact Melisa Erfen
+                                            <img src="img/main/offer-arr3.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq__row">
+                            <div class="faq__header">
+                                <p>
+                                    So what is a good translation?
+                                </p>
+                                <div class="openfaqic">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="faq__body">
+                                <div class="faqbodywrapper">
+                                    <div class="faqimg">
+                                        <img src="img/main/faqimg.png" alt="img">
+                                    </div>
+                                    <div class="faqinfo">
+                                        <p>
+                                            Is translation really necessary? This is a common question that people ask
+                                            themselves these days. After all, ‘everyone’ can, for example, exchange
+                                            ideas
+                                            and communicate using English. However, a lot of meaning and nuance and
+                                            precision can be lost when the native language isn’t used to full effect.
+                                        </p>
+                                        <p>
+                                            Visitors to websites are far more inclined to continue reading and stay if
+                                            they
+                                            are welcomed in their native language. And, of course, there are
+                                            circumstances
+                                            where there may be more at stake than losing customers if the person reading
+                                            the
+                                            text does not fully understand the information.
+                                        </p>
+                                        <ul>
+                                            <li>However</li>
+                                            <li>Native</li>
+                                            <li>Visitors</li>
+                                        </ul>
+                                        <a href="#" hreflang="en">
+                                            For more information, contact Melisa Erfen
+                                            <img src="img/main/offer-arr3.svg" alt="arrow">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
-
-
-
-
-            <!-- hreflang="en" -->
 
         </main>
 
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__topsect">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-3">
+                            <div class="footer__info">
+                                <a href="#" class="footer__logo" hreflang="en">
+                                    <img src="img/main/footer-logo.svg" alt="logo">
+                                </a>
+                                <p class="uppercase">
+                                    Optimising <b>strat</b>egic communication for our clients is <b>core</b> to our
+                                    ethos
+                                    Stratcore
+                                </p>
+                                <p>
+                                    Stratcore is a language service provider specialising in translations, proofreading,
+                                    editing, copywriting, web content creation, journalistic articles, voiceovers &
+                                    multilingual DTP.<br>
+                                    Stratcore adheres to the European Standard SS-EN15038
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-9">
+                            <div class="footernav">
+                                <div class="footer__navbox">
+                                    <p class="title">Menu</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#" hreflang="en">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Areas of expertise</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Client Advantages</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer__navbox">
+                                    <p class="title">Services</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#" hreflang="en">Translations</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Transcreation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Copywriting</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Content Writing / SEO</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Audio Transcription</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Voiceovers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Brand Validation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Desktop Publishing (DTP)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Corporate / Client Magazines</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" hreflang="en">Technical Documentation</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer__socbox">
+                                    <p class="title">Social</p>
+                                    <a href="#" target="_blank" rel="nofollow">
+                                        <img src="img/main/ln.svg" alt="icon">
+                                        <span>Let’s connect!</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__botsect">
+                <p>
+                    © 2024 stratcore ab. all rights reserved
+                </p>
+            </div>
+        </footer>
     </div>
 
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper-bundle.min.js"></script>
+    <script src="js/lib/select2.js"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
+
+<!-- hreflang="en" -->
