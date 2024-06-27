@@ -44,7 +44,7 @@ $(document).ready(function () {
         },
 
         breakpoints: {
-            
+
             992: {
                 slidesPerView: 2,
                 spaceBetween: 20,
@@ -65,12 +65,29 @@ $(document).ready(function () {
     }
 
     // faq
-    $('.faq__header').click(function(){
+    $('.faq__header').click(function () {
         $(this).toggleClass('active');
         $('.faq__body').not($(this).next('.faq__body')).slideUp();
+        $('.faq__header').not($(this)).removeClass('active');
         $(this).next('.faq__body').slideToggle();
     });
 
+    // menu
+    if ($(window).width() < 1200) {
+        $('.sublink a').click(function(e){
+            e.preventDefault();
+            $(this).next('.menudd').toggle();
+        })
+    }
+
+    $('.headermenu').click(function(){
+        $('.header__centersect').addClass('active');
+    });
+
+    $('.closemenu').click(function(){
+        $('.header__centersect').removeClass('active');
+    });
+    
 
 
 
@@ -82,11 +99,5 @@ $(document).ready(function () {
 
 
 
-
-
-
-    // if ($(window).width() < 992) {
-
-    // }
 
 });
