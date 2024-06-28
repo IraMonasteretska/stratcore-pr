@@ -445,6 +445,16 @@ header.header nav>ul>li>a:hover+.menudd,
     }
 }
 
+@media(max-width:991.8px) {
+    .header__centersect {
+        overflow: auto;
+    }
+
+    .header__centersect nav {
+        padding: 80px 20px 50px 20px;
+    }
+}
+
 @media(max-width:575.8px) {
     .header__leftsect {
         max-width: calc(100% - 120px);
@@ -463,5 +473,7 @@ header.header nav>ul>li>a:hover+.menudd,
         max-width: 100%;
         transform: translateX(120%);
     }
+
+  
 
 }
