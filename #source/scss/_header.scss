@@ -21,6 +21,7 @@ header.header {
                 position: relative;
                 z-index: 2;
                 padding: 10px 0;
+                transition: 0.3s;
 
                 &::after {
                     content: '';
@@ -36,7 +37,6 @@ header.header {
                     bottom: -34px;
                     transition: 0.3s;
                 }
-
 
             }
 
@@ -116,6 +116,11 @@ header.header {
     background: #95BA46;
     color: #fff;
     font-weight: 500;
+    transition: 0.3s;
+
+    &:hover {
+        background: #729131;
+    }
 }
 
 .header__lang {
@@ -223,6 +228,15 @@ header.header {
                 font-size: 16px;
                 font-weight: 500;
                 color: #222;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #729131;
+
+                    .icon {
+                        background: rgba(#E2ECF7, 1);
+                    }
+                }
 
 
                 .icon {
@@ -235,6 +249,7 @@ header.header {
                     height: 45px;
                     background: rgba(#E2ECF7, 0.5);
                     border-radius: 7px;
+                    transition: 0.3s;
 
                     img {
                         filter: drop-shadow(0 0 7px rgba(#5E569B, 0.2));
@@ -279,6 +294,8 @@ header.header nav>ul>li>a:hover+.menudd,
 .header__centersect .header__contact {
     display: none;
 }
+
+
 
 @media(max-width:1499.8px) {
 
@@ -428,3 +445,23 @@ header.header nav>ul>li>a:hover+.menudd,
     }
 }
 
+@media(max-width:575.8px) {
+    .header__leftsect {
+        max-width: calc(100% - 120px);
+        flex: 0 0 calc(100% - 120px);
+    }
+
+    .header__leftsect img {
+        max-width: 200px;
+    }
+
+    header.header {
+        padding: 20px 0;
+    }
+
+    .header__centersect {
+        max-width: 100%;
+        transform: translateX(120%);
+    }
+
+}
