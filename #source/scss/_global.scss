@@ -272,6 +272,52 @@ h1 {
     text-transform: uppercase;
 }
 
+// breadcrumbs ---- //
+.crumbs {
+
+    a,
+    span {
+        color: #777777;
+        font-size: 16px;
+        line-height: 165%;
+        cursor: default;
+    }
+    a{
+        transition: .3s;
+        cursor: pointer;
+        &:hover{
+            color: #96BB47;
+        }
+    }
+
+    .sep {
+        margin: 0 14px;
+        border-radius: 50%;
+        background: #96BB47;
+        width: 5px;
+        height: 5px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+// --- //
+
+//  phone btn ---- //
+.phonebtn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: .6s;
+    &:hover{
+        filter: brightness(80%);
+    }
+}
+//  --- //
+
 @media(max-width:1599.8px) {
     h1 {
         font-size: 80px;
