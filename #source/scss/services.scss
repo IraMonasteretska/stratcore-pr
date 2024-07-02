@@ -46,7 +46,9 @@
 
         svg {
             margin-left: 10px;
-            path, circle{
+
+            path,
+            circle {
                 transition: .4s;
             }
         }
@@ -54,16 +56,86 @@
 
     &:hover {
         background: #94B945;
+
         .title,
         p,
         .morebtn {
             color: #fff;
         }
-        svg circle{
+
+        svg circle {
             fill: #fff;
         }
-        svg path{
+
+        svg path {
             stroke: #94B945;
         }
+    }
+}
+
+// servinfo sections --- //
+
+.servinfo {
+    padding: 40px 0 130px;
+}
+
+.servinfo__content {
+    color: #7A7A7A;
+
+    a {
+        color: #94B945;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: .3s;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+
+.servinfo__image {
+    position: relative;
+    margin-left: 95px;
+    margin-bottom: -27px;
+    width: fit-content;
+
+    .main-image {
+        border-radius: 40px 0 40px 40px;
+    }
+
+    .leaf {
+        position: absolute;
+        bottom: -10px;
+        left: -25px;
+        width: 25%;
+        background-size: cover;
+    }
+}
+
+// --- ADAPTIVE --- //
+
+@media (max-width:1399.8px) {
+    .services {
+        padding: 130px 0 100px;
+    }
+
+    .services__item .title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:991.8px) {
+    .services {
+        padding: 100px 0 50px;
+    }
+}
+
+@media (max-width:575.8px) {
+    .services__item {
+        height: 280px;
+    }
+
+    .services {
+        padding: 80px 0 30px;
     }
 }

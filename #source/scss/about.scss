@@ -27,6 +27,7 @@
     position: relative;
     margin-left: 95px;
     margin-bottom: -27px;
+    width: fit-content;
 
     .main-image {
         border-radius: 40px 0 40px 40px;
@@ -36,6 +37,8 @@
         position: absolute;
         bottom: 0;
         left: -16px;
+        width: 30%;
+        background-size: cover;
     }
 }
 
@@ -121,7 +124,7 @@
 
 .aboutinfo {
     background: rgba(#52CAFC, .2);
-    padding: 115px;
+    padding: 115px 0;
 }
 
 .aboutinfo__inner {
@@ -133,6 +136,7 @@
 .aboutinfo__image {
     position: relative;
     margin-left: 16px;
+    width: fit-content;
 
     .main-image {
         border-radius: 40px 0 40px 40px;
@@ -142,6 +146,7 @@
         position: absolute;
         bottom: 0;
         left: -16px;
+        width: 30%;
     }
 }
 
@@ -184,5 +189,101 @@
 
     .hidden-text {
         display: none;
+    }
+}
+
+// -------- ADAPTIVE ------ //
+@media (max-width: 1399.8px) {
+    .abouttop__img {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1199.8px) {
+    .abouttop__img {
+        margin-left: 20px;
+    }
+
+    .abouttop {
+        min-height: 425px;
+    }
+}
+
+@media (max-width: 991.8px) {
+    .aboutinfo__image{
+        margin-bottom: 40px;
+    }
+    .aboutinfo {
+        padding: 90px 0;
+    }
+
+    .aboutblocks__item {
+        min-height: auto;
+    }
+
+    .aboutblocks {
+        padding: 85px 0 60px;
+    }
+
+    .abouttop__img {
+        margin-left: 0px;
+    }
+
+    .abouttop__content {
+        margin-bottom: 40px;
+    }
+
+    .abouttop .crumbs {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.8px) {
+    .aboutinfo {
+        padding: 60px 0;
+    }
+    .abouttop__content h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .aboutblocks .section_title {
+        br {
+            display: none;
+        }
+    }
+
+    .aboutblocks__item-head {
+        margin-bottom: 15px;
+    }
+
+    .abouttop__content h1 {
+        font-size: 36px;
+    }
+
+    .aboutblocks__item-head .title {
+        font-size: 16px;
+    }
+
+    .aboutblocks__item-head .icon {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .aboutblocks__item {
+        padding: 15px 20px;
+        margin-bottom: 25px;
+    }
+
+    .aboutblocks__item-body {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .aboutblocks {
+        padding: 85px 0 30px; 
     }
 }
