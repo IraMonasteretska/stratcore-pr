@@ -84,3 +84,101 @@
 .faq.faq__whitebg {
     background: #fff;
 }
+
+.choosesect.choosesect__si {
+    background: #FAF6D5;
+    padding: 140px 0;
+
+    .imgwrapper {
+        text-align: right;
+
+        .leaf {
+            left: 0;
+        }
+    }
+
+    .choosesect__descr {
+        padding-left: 60px;
+        max-width: 100%;
+    }
+
+    p {
+        max-width: 100%;
+
+        a {
+            color: var(--green);
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.newspapersect {
+    padding: 130px 0;
+
+    p {
+        font-weight: 500;
+        color: #7A7A7A;
+
+        a {
+            color: var(--green);
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .newspapersect__left {
+        padding-right: 60px;
+    }
+
+    .newspapersect__right {
+        padding-left: 60px;
+    }
+
+    ul {
+        margin-bottom: 20px;
+        list-style-type: disc;
+        padding-left: 20px;
+
+        li {
+            font-weight: 500;
+            color: #7A7A7A;
+        }
+    }
+
+    .imgwrap {
+        margin-top: 30px;
+        position: relative;
+
+        .bigpic {
+            width: 100%;
+            border-radius: 40px 0 40px 40px;
+        }
+
+        .leaf {
+            position: absolute;
+            right: -11px;
+            bottom: 0;
+        }
+
+    }
+}
+
+.blueb {
+    background: rgba(#46B8E5, 0.2);
+}
+
+.newspapersect.blueb {
+    padding: 105px 0;
+}
+
+.greenbrn.mob {
+    display: none;
+}
+
