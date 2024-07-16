@@ -35,7 +35,7 @@ $(document).ready(function () {
     });
 
     // testimonials
-    var swiper = new Swiper(".testimonialslider", {
+    var swiper = new Swiper(".testimonialslider.s1", {
         slidesPerView: 1,
         spaceBetween: 20,
         speed: 1000,
@@ -49,8 +49,38 @@ $(document).ready(function () {
             clickable: true,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next.s1",
+            prevEl: ".swiper-button-prev.s1",
+        },
+
+        breakpoints: {
+
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        },
+    });
+    var swiper = new Swiper(".testimonialslider.s2", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 1000,
+        loop: true,
+        // autoplay: {
+        //     delay: 3500,
+        //     disableOnInteraction: false,
+        // },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next.s2",
+            prevEl: ".swiper-button-prev.s2",
         },
 
         breakpoints: {
@@ -106,8 +136,40 @@ $(document).ready(function () {
         $('.hidden-text').slideToggle();
     });
 
+    
+    var swiper = new Swiper(".otherpostsl", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: 1000,
+        loop: true,
+        // autoplay: {
+        //     delay: 3500,
+        //     disableOnInteraction: false,
+        // },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
 
-
+        breakpoints: {
+            575: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+        },
+    });
 
 
 
