@@ -99,7 +99,7 @@ $(document).ready(function () {
     // styled selects
     if ($('select').length) {
         $('.styledselect').select2({
-            placeholder: "Select a state",
+            // placeholder: "Select a state",
             minimumResultsForSearch: Infinity,
         });
     }
