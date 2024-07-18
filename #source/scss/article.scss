@@ -177,8 +177,6 @@
     *:last-child {
         margin-bottom: 0;
     }
-
-
 }
 
 .articleinfo {
@@ -198,6 +196,29 @@
         margin: 0;
         color: #3D3D3D;
         font-weight: 500;
+    }
+}
+
+.servinfo__content a:hover {
+    text-decoration: none;
+}
+
+.newspapersect p a,
+.choosesect.choosesect__si p a,
+.articlewrapper p a {
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+@media(max-width:1550.8px) {
+    .otherposts .swiper-button-next {
+        right: -35px;
+    }
+    .otherposts .swiper-button-prev {
+        left: -35px;
     }
 }
 
@@ -286,5 +307,9 @@
 
     .otherposts .swiper-button-prev {
         left: 0;
+    }
+
+    .otherposts .section_title {
+        margin-bottom: 30px;
     }
 }

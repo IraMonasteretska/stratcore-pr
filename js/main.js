@@ -40,10 +40,10 @@ $(document).ready(function () {
         spaceBetween: 20,
         speed: 1000,
         loop: true,
-        // autoplay: {
-        //     delay: 3500,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -70,10 +70,10 @@ $(document).ready(function () {
         spaceBetween: 20,
         speed: 1000,
         loop: true,
-        // autoplay: {
-        //     delay: 3500,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -135,17 +135,16 @@ $(document).ready(function () {
         $(this).toggleClass('open');
         $('.hidden-text').slideToggle();
     });
-
     
     var swiper = new Swiper(".otherpostsl", {
         slidesPerView: 1,
         spaceBetween: 20,
         speed: 1000,
         loop: true,
-        // autoplay: {
-        //     delay: 3500,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -170,14 +169,4 @@ $(document).ready(function () {
             },
         },
     });
-
-
-
-
-
-
-
-
-
-
 });
