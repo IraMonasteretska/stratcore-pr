@@ -69,7 +69,7 @@ footer.footer {
         max-width: 168px;
         flex: 0 0 168px;
 
-        a {
+        &>a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -131,6 +131,23 @@ footer.footer {
         color: #fff;
         font-size: 14px;
         line-height: 150%;
+    }
+}
+
+.memberof {
+    margin-top: 35px;
+
+    p {
+        margin-bottom: 15px;
+        color: #282828;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    a {
+        img {
+            max-width: 100%;
+        }
     }
 }
 
