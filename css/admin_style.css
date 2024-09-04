@@ -1,0 +1,72 @@
+.infosection__right li{
+	margin-bottom: 10px;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    border: none;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    color: #ffb900;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    color: #46b450;
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+    color: #dc3232;
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output,
+.wpcf7 form.sent .wpcf7-response-output,
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wpcf7-not-valid-tip {
+    position: absolute;
+}
+
+.errorpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.errorpage__content {
+    text-align: center;
+}
+
+.errorpage__content span {
+    font-size: 165px;
+    font-weight: 900;
+    color: #94B945;
+    text-shadow: 0 0 2px #3c4b1e, 0 0 2px #36411e;
+    margin-bottom: 30px;
+}
+
+.errorpage__content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.errorpage__buttons {
+    text-align: center;
+}
+
+#loadmore,
+#loadmore-cases{
+    color: var(--green);
+    font-weight: 600;
+    font-size: 20px;
+}
