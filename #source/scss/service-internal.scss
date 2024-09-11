@@ -40,7 +40,7 @@
 
     .imgwrap {
         position: relative;
-        text-align: right;
+        padding-left: 37px;
 
         .mpic {
             display: inline-block;
@@ -104,7 +104,12 @@
     padding: 140px 0;
 
     .imgwrapper {
-        text-align: right;
+        // text-align: right;
+        padding-left: 20px;
+
+        .bigimg{
+            max-width: calc(100% - 20px);
+        }
 
         .leaf {
             left: 0;
@@ -215,6 +220,18 @@
 }
 
 @media(max-width:1199.8px) {
+    .choosesect.choosesect__si .imgwrapper {
+        padding-left: 0px;
+    }
+    .choosesect.choosesect__si .imgwrapper .bigimg {
+        max-width: 100%;
+    }
+    .reverse-section .imgwrap .mpic {
+        max-width: calc(100% - 15px);
+    }
+    .reverse-section .imgwrap {
+        padding-left: 15px;
+    }
     .infosection-text .infosection__right {
         padding-left: 0;
     }
