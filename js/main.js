@@ -70,10 +70,6 @@ $(document).ready(function () {
         spaceBetween: 20,
         speed: 1000,
         loop: true,
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction: false,
-        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
