@@ -87,9 +87,21 @@
         text-decoration: underline;
         text-underline-offset: 3px;
         transition: .3s;
-        &:hover{
+
+        &:hover {
             opacity: 0.6;
         }
+    }
+    li{
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    ol{
+        padding-left: 20px;
     }
 }
 
@@ -144,8 +156,8 @@
 
     .servinfo {
         padding-top: 70px;
-    } 
-    
+    }
+
 }
 
 @media (max-width:575.8px) {
@@ -159,5 +171,5 @@
 
     .servinfo {
         padding-top: 50px;
-    } 
+    }
 }

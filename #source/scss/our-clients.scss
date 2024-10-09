@@ -9,13 +9,90 @@
     }
 }
 
+//  loginsect
+.loginsect {
+    padding: 160px 0 120px;
+}
+
+.loginsect {
+    .imgwrapper {
+        position: relative;
+
+        .bigimg {
+            border-radius: 40px 0 40px 40px;
+            width: 533px;
+            background-size: cover;
+        }
+
+        .leaf {
+            position: absolute;
+            left: -4px;
+            bottom: 0px;
+            width: 121px;
+            background-size: cover;
+        }
+    }
+}
+
+.loginsect__wrapper {
+    max-width: 1268px;
+    margin: 0 auto;
+}
+
+.loginsect__info {
+    text-align: center;
+    max-width: 486px;
+    margin: 0 0 0 auto;
+
+    a {
+        max-width: 100%;
+    }
+
+    .section_title {
+        margin-bottom: 35px;
+    }
+
+    .subtitle {
+        color: #7A7A7A;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 62px;
+    }
+}
+
 @media(max-width:1199.8px) {
+    .loginsect .imgwrapper {
+        max-width: 400px;
+    }
+
+    .loginsect {
+        padding: 120px 0 80px;
+    }
+
     .aboutblocks.aboutblocks__sm .aboutblocks__item {
         padding-right: 20px;
     }
 
     .aboutblocks.aboutblocks__sm .section_title {
         margin-bottom: 50px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .loginsect__info {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .loginsect__info .subtitle {
+        margin-bottom: 35px;
+    }
+    .imgwrapper{
+        margin: 0 auto;
+    }
+    .loginsect {
+        padding: 90px 0 60px;
     }
 }
 
