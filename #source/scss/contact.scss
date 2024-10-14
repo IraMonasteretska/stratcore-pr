@@ -80,7 +80,7 @@
 
 .teamwrapper {
     max-width: 1298px;
-    margin: 75px auto 80px;
+    margin: 75px auto 50px;
 
 
     .row {
@@ -91,6 +91,26 @@
     .col-lg-4 {
         padding-left: 25px;
         padding-right: 25px;
+    }
+    .col-md-6{
+        margin-bottom: 30px;
+    }
+}
+
+.teammember_text{
+    ul{
+        list-style: disc;
+        padding-left: 40px;
+    }
+    p,li{
+        color: #7A7A7A;
+    }
+    a{
+        color: #95BA46;
+        transition: .3s;
+        &:hover{
+            opacity: .7;
+        }
     }
 }
 
@@ -236,6 +256,9 @@
 }
 
 @media(max-width:991.8px) {
+    .teammember_text{
+        padding-left: 15px;
+    }
     .contactsect__wrap {
         margin-top: 70px;
     }
@@ -262,9 +285,12 @@
 }
 
 @media(max-width:767.8px) {
+    .teammember_text{
+        padding-left: 0;
+    }
     .teambox {
         max-width: 400px;
-        margin: 0 auto 30px;
+        margin: 0 auto 0px;
     }
 
     .contbotttext {
@@ -280,7 +306,7 @@
     }
 
     .teamwrapper {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
 
