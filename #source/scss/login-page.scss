@@ -1,0 +1,248 @@
+.loginsect {
+    padding: 80px 0 50px;
+}
+
+.loginsect__logo {
+    margin: 0 auto 100px;
+    width: 186px;
+
+    img {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.loginsect__wrapper {
+    .title {
+        margin-bottom: 30px;
+        color: #282828;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 130%;
+        text-align: center;
+    }
+
+    .subtitle {
+        color: #7A7A7A;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.forgot__wrapper .loginsect__form{
+    margin: 180px auto 0;
+}
+
+.loginsect__form {
+    max-width: 459px;
+    margin: 0px auto 0;
+
+    .form-group {
+        margin: 0 0 25px!important;
+    }
+
+    input {
+        width: 100%;
+        height: 56px;
+        border-radius: 30px;
+        background-color: #F5FEE1;
+        border: 1px solid rgba(#ADADAD, .35);
+        padding: 15px 20px;
+        color: #282828;
+
+        &::placeholder {
+            color: #8B8B8B;
+            transition: .3s;
+        }
+
+        &:focus::placeholder {
+            opacity: 0;
+        }
+    }
+
+    .checkfield {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+        }
+
+        span {
+            display: inline-flex;
+            color: #4C690F;
+            font-weight: 500;
+            font-size: 14px;
+            transition: .4s;
+            line-height: 140%;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            &:before {
+                content: '';
+                display: inline-flex;
+                width: 15px;
+                height: 15px;
+                border-radius: 3px;
+                margin-right: 8px;
+                background-color: #F5FEE0;
+                border: 1px solid #DCE2CF;
+            }
+        }
+
+        input:checked+span:before {
+            background-image: url(/assets/checked.svg);
+            background-image: url(/img/checked.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .forgot {
+        color: #4C690F;
+        transition: .4s;
+        font-size: 15px;
+        line-height: 150%;
+        position: relative;
+        margin: 0;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    button {
+        margin-top: 20px;
+        width: 100%;
+        height: 62px;
+        border-radius: 30px;
+        background-color: #94B945;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .4s;
+        border: none;
+        outline: none;
+
+        &:hover {
+            background-color: #729131;
+        }
+    }
+
+    .form-group {
+        position: relative;
+    }
+
+    .show-password {
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 10px);
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            background-size: cover;
+            display: none;
+
+            &.showimg {
+                display: block;
+            }
+
+            &.hideimg {
+                display: none;
+            }
+        }
+
+        &.hide-pass {
+            .showimg {
+                display: none;
+            }
+
+            .hideimg {
+                display: block;
+            }
+        }
+    }
+}
+
+.bottomrow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loginsect__image{
+    img{
+        max-width: 490px;
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+.forgot__wrapper{
+    margin-top: 62px;
+}
+
+//  ADAPTIVE ---- //
+
+@media (max-width: 1199.8px) {
+    .loginsect__image{
+        text-align: center;
+    }
+    .loginsect__form {
+        max-width: 459px;
+        margin: 0 auto 0;
+    }
+    .forgot__wrapper .loginsect__form{
+        margin: 0px auto 0;
+    }
+    .loginsect__logo {
+        margin: 0px auto 70px;
+        width: 150px;
+    }
+
+    .loginsect__form {
+        max-width: 430px;
+    }
+
+    .loginsect__wrapper .title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 575.8px) {
+    .loginsect {
+        padding: 60px 0 50px;
+    }
+
+    .loginsect__logo {
+        margin: 0px auto 50px;
+        width: 130px;
+    }
+
+    .bottomrow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .loginsect__form .forgot {
+        margin-top: 20px;
+        margin-left: 28px;
+        font-weight: 500;
+    }
+}

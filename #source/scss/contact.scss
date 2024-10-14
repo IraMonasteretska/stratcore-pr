@@ -98,16 +98,19 @@
 }
 
 .teammember_text{
+    color: #282828;
     ul{
         list-style: disc;
         padding-left: 40px;
     }
     p,li{
-        color: #7A7A7A;
+        color: #555;
+        font-weight: 500;
     }
     a{
         color: #95BA46;
         transition: .3s;
+        font-weight: 500;
         &:hover{
             opacity: .7;
         }
