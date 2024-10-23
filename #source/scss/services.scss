@@ -17,13 +17,13 @@
     .title {
         margin-bottom: 15px;
         font-weight: 600;
-        font-size: 29px;
+        font-size: 24px;
         line-height: 130%;
     }
 
     .title,
     p {
-        color: #434343;
+        color: #434343!important;
         transition: .4s;
     }
 
@@ -32,7 +32,14 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        span{
+            color: #434343!important;
+        }
+        strong{
+            font-weight: 400!important;
+        }
     }
+
 
     .morebtn {
         display: flex;
@@ -135,9 +142,13 @@
     .services {
         padding: 130px 0 100px;
     }
+    .services__item{
+        padding: 30px 24px;
+    }
+
 
     .services__item .title {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .servinfo {

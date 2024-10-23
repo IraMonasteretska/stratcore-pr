@@ -9,11 +9,31 @@
         max-width: 240px;
     }
 
-    p {
+    
+
+    p{
         max-width: 515px;
         color: #7A7A7A;
         font-weight: 500;
-        margin-bottom: 50px;
+    }
+    li{
+        color: #7A7A7A;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    ul{
+        padding-left: 40px;
+        list-style: disc;
+    }
+    a:not(.greenbrn){
+        color: #94B945;
+        transition: .3s;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    .greenbrn{
+        margin-top: 30px;
     }
 }
 
@@ -482,8 +502,8 @@
 
 
 @media(max-width:1599.8px) {
-    .mainhero p {
-        margin-bottom: 40px;
+    .greenbrn{
+        margin-top: 20px;
     }
 
     .whatweoffer .subtitle {
@@ -754,9 +774,6 @@
         padding: 130px 0 50px;
     }
 
-    .mainhero p {
-        margin-bottom: 30px;
-    }
 
     .whatweoffer .subtitle {
         margin-bottom: 40px;

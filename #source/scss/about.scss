@@ -21,6 +21,23 @@
         color: #7A7A7A;
         font-weight: 500;
     }
+    li{
+        color: #7A7A7A;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    ul{
+        list-style: disc;
+        padding-left: 40px;
+        margin: 10px 0;
+    }
+    a{
+        color: #94B945;
+        transition: .3s;
+        &:hover{
+            opacity: .7;
+        }
+    }
 }
 
 .abouttop__img {
